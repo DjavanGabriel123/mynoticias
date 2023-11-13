@@ -18,6 +18,7 @@ body {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 100px;
+    display: flex;
 
 }
 
@@ -174,6 +175,7 @@ body {
     font-size: 12px;
     text-transform: uppercase;
     top: 385px;
+    z-index: 100;
 
     ul {
         margin: 0;
@@ -190,6 +192,31 @@ body {
         background-color: red;
     }
 }
+
+.categorylast {
+    position: absolute;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: -165px 10px;
+    z-index: 100;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li {
+        margin-right: 0;
+        margin-top: 10px;
+        color: #fff;
+        display: block;
+        padding: 3px 10px;
+        background-color: red;
+    }
+}
+
+
 
 
 .textbanner {
@@ -318,7 +345,7 @@ body {
     position: relative;
     margin-bottom: 20px;
     border-bottom: 2px solid #e6e6e8;
-    height: 20px;
+    height: 25px;
     width: 94%;
 
     h1 {
@@ -388,7 +415,7 @@ body {
 }
 
 .last-news {
-    width: 828px;
+    width: 770px;
 
     .display-flex {
         display: flex;
@@ -398,7 +425,7 @@ body {
 
 
 .news-seconds {
-    width: 256px;
+    width: 236px;
     display: block;
     background-color: #3d3c3c;
     border-radius: 4px;
@@ -408,6 +435,8 @@ body {
     img {
         width: 100%;
         object-fit: cover;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
 
 
 
@@ -430,7 +459,7 @@ body {
             font-size: 12px;
             align-items: flex-end;
             display: flex;
-            margin-right: 18px;
+            margin-right: 10px;
         }
 
 
@@ -445,4 +474,54 @@ body {
 
 .display-flex {
     display: flex;
+}
+
+.news-popular {
+    width: 33.333333%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+
+
+    .popular-post {
+        padding-top: 0px;
+        padding-bottom: 1px;
+        position: static;
+        transform: none;
+        display: block;
+    }
+
+    h3 {
+        color: #fff;
+        font-size: 16px;
+        text-transform: uppercase;
+        position: relative;
+        border-bottom: 2px solid #e6e6e8;
+        font-size: 16px;
+        font-weight: 700 ;
+        padding-bottom: 4px;
+    }
+
+    ul{
+        list-style: none;
+    }
+
+    .post-popular{
+        display: flex;
+        position: relative;
+        border-radius: 4px;
+        margin-bottom: 15px;
+
+    }
+}
+
+.popular-post h3::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 50px;
+    background-color: red;
 }
