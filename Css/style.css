@@ -385,6 +385,7 @@ body {
   background-color: #0D0D0D;
   font-family: "IBM Plex Sans", sans-serif;
   margin: 0px;
+  overflow-x: hidden;
 }
 
 .container {
@@ -394,6 +395,7 @@ body {
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 100px;
 }
 
 .header {
@@ -655,17 +657,58 @@ body {
   border-radius: 4px;
 }
 
+.news-seconds {
+  width: 100%;
+}
+
 .tittle-news {
   position: relative;
   margin-bottom: 20px;
   border-bottom: 2px solid #e6e6e8;
-  width: 1086px;
+  height: 20px;
+  width: 94%;
 }
 .tittle-news h1 {
   font-size: 16px;
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.button-next a:hover {
+  color: #68962f;
+}
+
+.button-next {
+  position: relative;
+  z-index: 100;
+  margin: 0px -10px;
+}
+.button-next a {
+  display: flex;
+}
+.button-next ul {
+  background-color: transparent;
+  position: absolute;
+  top: -28px;
+  right: 12px;
+  padding-left: 10px;
+  justify-content: center;
+  list-style: none;
+}
+.button-next ul li {
+  cursor: pointer;
+  margin: -14px 3px;
+}
+.button-next ul button {
+  border-radius: 100%;
+  text-indent: -999999999999px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
 }
 
 .tittle-news::after {
@@ -676,4 +719,51 @@ body {
   height: 2px;
   width: 50px;
   background-color: red;
+}
+
+.last-news {
+  width: 828px;
+}
+.last-news .display-flex {
+  display: flex;
+}
+
+.news-seconds {
+  width: 256px;
+  display: block;
+  background-color: #3d3c3c;
+  border-radius: 4px;
+  height: 300px;
+  margin-right: 30px;
+}
+.news-seconds img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.news-seconds h2 {
+  color: #fff;
+  font-size: 16px;
+  margin: 15px 8px;
+}
+.news-seconds .midias {
+  display: inline-flex;
+  width: 256px;
+}
+.news-seconds .midias a {
+  text-decoration: none;
+  color: rgb(168, 166, 166);
+  font-size: 12px;
+  align-items: flex-end;
+  display: flex;
+  margin-right: 18px;
+}
+.news-seconds .midias span {
+  color: rgb(146, 143, 143);
+  font-size: 20px;
+  margin: -2px 8px;
+}
+
+.display-flex {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
